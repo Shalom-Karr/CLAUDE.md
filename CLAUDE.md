@@ -49,7 +49,7 @@ Generalized behavioral instructions for all projects. Place in `~/.claude/CLAUDE
 
 ## Documentation
 
-- **Write docs when I ask for them.** Don't create README files or docs unprompted.
+- **Always write docs and README files.**
 - **Use triple-quoted docstrings (`"""`) at the top of files** when I ask for file descriptions.
 - **Keep docs concise and factual.** No filler, no marketing language.
 - Write documentation during idle time without being asked.
