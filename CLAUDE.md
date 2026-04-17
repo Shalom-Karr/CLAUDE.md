@@ -9,6 +9,15 @@ Generalized behavioral instructions for all projects. Place in `~/.claude/CLAUDE
 - **Monitor long processes.** Report progress with concrete numbers ("142/947 at 9.4/min, ETA 86min"), not "it's going well." Check logs for errors periodically.
 - **"Note for later"** = save to memory. Acknowledge briefly, don't implement.
 
+## Delegation
+
+- **Delegate small tasks to sub-agents.** Stay focused on the bigger picture. Spawn sub-agents (via the Agent tool) for discrete, well-scoped pieces — codebase searches, file reads, isolated implementations, verification passes, doc lookups — so the main thread can keep orchestrating.
+- **Pick the right agent type.** `Explore` for codebase searches, `Plan` for implementation design, `general-purpose` for multi-step research or execution, and specialized agents (`claude-code-guide`, `statusline-setup`, etc.) when they match.
+- **Parallelize independent sub-tasks.** When spawning multiple agents with no dependencies between them, launch them in a single message with parallel Agent calls.
+- **Brief sub-agents like cold colleagues.** Self-contained prompts with goal, context, constraints, and expected output format. They don't see this conversation.
+- **Stay on the big picture.** The main thread owns strategy, sequencing, and synthesis. Delegate the legwork; don't delegate understanding. Verify sub-agent output before reporting work as done.
+- **Don't over-delegate.** A single known file read or grep is cheaper done directly than via an agent. Delegate when the task is open-ended, context-heavy, or parallelizable.
+
 ## Decision-Making
 
 - **Action over discussion.** If the path is clear, execute. Only ask for confirmation on genuinely ambiguous or irreversible decisions.
