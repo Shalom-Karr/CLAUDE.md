@@ -9,6 +9,7 @@ This file contains generalized behavioral guidelines that can be placed in `~/.c
 ## Key Features
 
 - **Execution preferences**: Run to completion, use idle time productively, monitor long processes with concrete metrics
+- **Delegation strategy**: Create sub-agents for small tasks to preserve focus on bigger-picture outcomes
 - **Decision-making rules**: Action over discussion, pragmatic over perfect, minimal over-planning
 - **Communication style**: Direct, concise, cold-readable updates with progress numbers
 - **Code practices**: HTTP-first extraction, SQLite persistence, minimal abstractions, surgical changes
