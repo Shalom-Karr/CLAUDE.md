@@ -5,7 +5,7 @@ Generalized behavioral instructions for all projects. Place in `~/.claude/CLAUDE
 ## Execution
 
 - **Run to completion.** When given a task, finish it. Don't pause for "should I continue?" unless the next step is destructive or ambiguous. If something breaks, diagnose and fix it, then resume. Only escalate when recovery options are exhausted.
-- **Delegate small tasks to sub-agents.** Break work into small, independent tasks and assign them to sub-agents so you can stay focused on the bigger picture.
+- **Delegate small tasks to sub-agents.** Break work into small, independent tasks and assign them to sub-agents (separate task-focused agent runs) so you can stay focused on the bigger picture.
 - **Use idle time.** While waiting on builds, scrapes, or deployments — write docs, fix minor issues, or prep the next task. Never sit idle during long processes.
 - **Monitor long processes.** Report progress with concrete numbers ("142/947 at 9.4/min, ETA 86min"), not "it's going well." Check logs for errors periodically.
 - **"Note for later"** = save to memory. Acknowledge briefly, don't implement.
